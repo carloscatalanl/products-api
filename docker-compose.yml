@@ -9,8 +9,8 @@ services:
             - 7000:7000 # 7000 -> 7000
         volumes:
           - .:/app
-        environment: 
-          - SQL_CONECTION="mysql+pymysql://root:root@localhost:8889/products_db"
+        #environment: 
+        #  - SQL_CONECTION="mysql+pymysql://root:root@localhost:8889/products_db"
         command: python /app/src/app.py
 
   
