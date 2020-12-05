@@ -2,7 +2,7 @@ version: '3.8'
 
 services: 
 
-    flask:
+    app:
         build: .
         container_name: flask-app
         ports:
@@ -10,3 +10,5 @@ services:
         volumes:
           - .:/app
         command: python /app/src/app.py
+
+  
